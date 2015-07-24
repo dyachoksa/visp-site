@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-24 21:43+0300\n"
+"PO-Revision-Date: 2015-07-24 21:47+0300\n"
+"Last-Translator: Sergey Dyachok <sergey@sdyachok.com.ua>\n"
+"Language-Team: RU <ru@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: news/admin.py:33
+msgid "has image"
+msgstr "есть изображение"
+
+#: news/apps.py:14 visp/templates/news/news_list.html:4
+#: visp/templates/news/news_list.html:10
+#: visp/templates/news/templatetags/latest_news.html:3
+msgid "News"
+msgstr "Новости"
+
+#: news/models.py:16 prices/models.py:15
+msgid "title"
+msgstr "название"
+
+#: news/models.py:18 prices/models.py:19
+msgid "is published"
+msgstr "опубликовано"
+
+#: news/models.py:19
+msgid "image"
+msgstr "изображение"
+
+#: news/models.py:20
+msgid "content"
+msgstr "содержание"
+
+#: news/models.py:21
+msgid "created"
+msgstr "создано"
+
+#: news/models.py:22
+msgid "updated"
+msgstr "обновлено"
+
+#: news/models.py:26
+msgctxt "singular"
+msgid "news"
+msgstr "новость"
+
+#: news/models.py:27
+msgid "news"
+msgstr "новости"
+
+#: pages/apps.py:14
+msgid "Pages"
+msgstr "Страницы"
+
+#: prices/apps.py:14 visp/templates/prices/price_list.html:4
+#: visp/templates/prices/price_list.html:11
+msgid "Prices"
+msgstr "Цены"
+
+#: prices/models.py:16 prices/models.py:32
+msgid "price"
+msgstr "цена"
+
+#: prices/models.py:17
+msgid "speed"
+msgstr "скорость"
+
+#: prices/models.py:18
+msgid "description"
+msgstr "описание"
+
+#: prices/models.py:20
+msgid "private sector tariff"
+msgstr "тариф частного сектора"
+
+#: prices/models.py:21
+msgid "position"
+msgstr "позиция"
+
+#: prices/models.py:33
+msgid "prices"
+msgstr "цены"
+
+#: visp/settings.py:165
+msgid "Russian"
+msgstr "Русский"
+
+#: visp/settings.py:166
+msgid "English"
+msgstr "Английский"
+
+#: visp/templates/news/news_detail.html:19
+msgid "All news"
+msgstr "Все новости"
+
+#: visp/templates/news/news_list.html:19
+#: visp/templates/news/templatetags/latest_news.html:15
+msgid "read more"
+msgstr "читать дальше"
+
+#: visp/templates/pages/home.html:4
+msgid "Main"
+msgstr "Главная"
+
+#: visp/templates/pages/home.html:16 visp/templates/prices/price_list.html:38
+msgid "Connect"
+msgstr "Подключиться"
+
+#: visp/templates/prices/price_list.html:23
+msgid "For private sector"
+msgstr "Для частного сектора"
+
+#: visp/templates/prices/price_list.html:33
+msgid "Unlimited trafic"
+msgstr "Неограниченный трафик"

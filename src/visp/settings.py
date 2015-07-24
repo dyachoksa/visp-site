@@ -159,6 +159,17 @@ CKEDITOR_CONFIGS = {
 
 # Other settings
 
+from django.utils.translation import ugettext_lazy as _
+
+LANGUAGES = (
+    ('ru', _('Russian')),
+    ('en', _('English')),
+)
+
+LOCALE_PATHS = (
+    os.path.join(os.path.dirname(__file__), 'locale'),
+)
+
 SITE_ID = 1
 
 DEBUG_TOOLBAR_PANELS = [
