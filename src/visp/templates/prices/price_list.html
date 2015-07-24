@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block page_title %}{% trans "Prices" %}{% endblock %}
+
+{% block page_content %}
+  <div id="pricingWrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="sectionTitle">{% trans "Prices" %}</h2>
+          <p class="text-center text-muted">Все цены действительны с 15.04.2015</p>
+				</div>
+			</div>
+
+			<div class="row">
+        {% for price in prices %}
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <ul class="priceTable">
+              <li class="title">{{ price.title }}</li>
+
+              {% if price.is_private_sector %}
+                <li class="description">{% trans "For private sector" %}</li>
+              {% else %}
+                <li class="description">&nbsp;</li>
+              {% endif %}
+
+              <li class="price">{{ price.price }} грн.</li>
+
+              <li>
+                <ul class="features">
+                  <li>{{ price.speed }}</li>
+                  <li>{% trans 'Unlimited trafic' %}</li>
+                </ul>
+              </li>
+
+              <li class="call">
+                <a class="btn btn-success btn-lg" href="/pages/contacts/">{% trans "Connect" %}</a>
+              </li>
+            </ul>
+          </div>
+        {% endfor %}
+			</div>
+    </div>
+	</div> <!-- /pricingWrap -->
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load sitetree i18n news_tags %}
+
+{% block page_title %}{{ flatpage.title }}{% endblock %}
+
+{% block page_content %}
+  <div id="featureWrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          {% sitetree_menu from "pages" include "trunk,topmenu" template "sitetree/menu_bootstrap3_navpills.html" %}
+
+          <h1>{{ flatpage.title }}</h1>
+
+          <article>
+            {{ flatpage.content | safe }}
+          </article>
+        </div>
+
+        <div class="col-lg-4">
+          {% latest_news %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

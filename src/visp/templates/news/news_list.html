@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block page_title %}{% trans "News" %}{% endblock %}
+
+{% block page_content %}
+  <div id="featureWrap">
+    <div class="container">
+      <div class="col-lg-12">
+        <h1>{% trans "News" %}</h1>
+
+        {% for news in news_list %}
+          <h2 class="news-title"><a href="{% url 'news:detail' news.slug %}">{{ news.title }}</a></h2>
+
+          <div class="news-content">
+            {{ news.content | truncatewords_html:35 | safe }}
+
+            <p class="text-right">
+              <a href="{% url 'news:detail' news.slug %}">{% trans 'read more' %}</a>
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

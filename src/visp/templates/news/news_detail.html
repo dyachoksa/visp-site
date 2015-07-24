@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load i18n news_tags %}
+
+{% block page_title %}{{ news.title }}{% endblock %}
+
+{% block page_content %}
+  <div id="featureWrap">
+    <div class="container">
+      <div class="col-lg-8">
+        <h1>{{ news.title }}</h1>
+
+        <div class="news-content">
+          {{ news.content | safe }}
+        </div>
+
+        <nav>
+          <ul class="pager">
+            <li class="previous">
+              <a href="{% url 'news:list' %}"><span aria-hidden="true">&larr;</span> {% trans "All news" %}</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-lg-4">
+        {% latest_news %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

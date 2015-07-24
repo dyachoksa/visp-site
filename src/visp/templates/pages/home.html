@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block page_title %}{% trans 'Main' %}{% endblock %}
+
+{% block page_content %}
+  <div class="jumbotron">
+    <div class="container">
+      <div class="col-md-12 jumboText">
+        <h1>Интернет и Кабельное ТВ</h1>
+
+        <h2>Первомайская городская компьютерная сеть</h2>
+
+        <a class="btn btn-lg btn-success action-btn" href="/pages/connect/">
+          <i class="fa fa-sellsy fa-4x pull-left"></i>
+          <span class="text">{% trans "Connect" %}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="featureWrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 text-center feature">
+          <i class="fa fa-laptop icon"></i>
+
+          <h3>Интернет</h3>
+
+          <p>
+            Получайте доступ к всемирной сети Интернет на скорости до 100 Мбит/с без ограничения
+            по трафику и времени.
+          </p>
+
+          <p>
+            <a href="/pages/about/" class="btn btn-info">Подробнее</a>
+          </p>
+        </div>
+        <div class="col-sm-6 text-center feature">
+          <i class="fa fa-desktop icon"></i>
+
+          <h3>Кабельное ТВ</h3>
+
+          <p>
+            Смотрите более 70 лучших телеканалов мира различной тематики и для всех возрастный категорий.
+          </p>
+
+          <p>
+            <a href="/pages/about/tv/" class="btn btn-info">Подробнее</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /featureWrap -->
+{% endblock %}

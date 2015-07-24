@@ -1,0 +1,10 @@
+Django
+Pillow
+pytz
+
+django-flat-theme
+django-sitetree
+django-compressor
+django-debug-toolbar
+django-ckeditor
+django-model-utils

@@ -1,0 +1,20 @@
+{% load i18n %}
+<div class="well">
+  <h2>{% trans "News" %}</h2>
+
+  {% for item in news %}
+    <div class="news-row">
+      <h4 class="news-title">
+        <a href="{% url 'news:detail' item.slug %}">{{ item.title }}</a>
+      </h4>
+
+      <div class="news-content">
+        {{ item.content | truncatewords_html:10 | safe }}
+
+        <p class="text-right">
+          <a href="{% url 'news:detail' item.slug %}">{% trans 'read more' %}</a>
+        </p>
+      </div>
+    </div>
+  {% endfor %}
+</div>

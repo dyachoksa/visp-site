@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load compress i18n %}
+
+{% block page_title %}{{ flatpage.title }}{% endblock %}
+
+{% block page_content %}
+  <div id="featureWrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>{{ flatpage.title }}</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <article>
+            {{ flatpage.content | safe }}
+          </article>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="embed-responsive embed-responsive-4by3">
+            <div class="embed-responsive-item" id="map"></div>
+          </div>
+          <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=YhntnkUmZ7K8UkkFhd9Fmr55Pwa-M2Is&id=map"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

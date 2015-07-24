@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block page_title %}{{ flatpage.title }}{% endblock %}
+
+{% block page_content %}
+  <div id="featureWrap">
+    <div class="container">
+      <h1>{{ flatpage.title }}</h1>
+
+      <article>
+        {{ flatpage.content | safe }}
+      </article>
+    </div>
+  </div>
+{% endblock %}
