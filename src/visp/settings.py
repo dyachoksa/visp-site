@@ -17,7 +17,9 @@ import environ
 import os
 
 root = environ.Path(__file__) - 3
-env = environ.Env()
+env = environ.Env(
+    DEBUG=(bool, False)
+)
 environ.Env.read_env(os.path.join(root(), '.env'))
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
