@@ -1,6 +1,7 @@
 Django
 Pillow
 pytz
+psycopg2
 
 django-flat-theme
 django-sitetree
@@ -8,3 +9,4 @@ django-compressor
 django-debug-toolbar
 django-ckeditor
 django-model-utils
+django-environ
