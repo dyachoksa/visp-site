@@ -2,6 +2,7 @@ Django
 Pillow
 pytz
 psycopg2
+cssmin
 
 django-flat-theme
 django-sitetree
