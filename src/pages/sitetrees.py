@@ -21,6 +21,7 @@ sitetrees = (
             item('Connect', '/pages/connect/', url_as_pattern=False),
         ]),
         item('Contacts', '/pages/contacts/', url_as_pattern=False),
+        item('My Account', 'https://cp.visp.com.ua:9443/', url_as_pattern=False),
     ]),
 
     tree('pages', items=[
@@ -41,6 +42,7 @@ sitetrees = (
             item('Подключение', '/pages/connect/', url_as_pattern=False),
         ]),
         item('Контакты', '/pages/contacts/', url_as_pattern=False),
+        item('Личный кабинет', 'https://cp.visp.com.ua:9443/', url_as_pattern=False),
     ]),
 
     tree('pages_ru', items=[
