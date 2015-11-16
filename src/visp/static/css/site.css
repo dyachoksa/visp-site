@@ -132,6 +132,10 @@ h3.sectionTitle {
 	background: #333;
 }
 
+.navbar-btn {
+	margin-top: 16px;
+}
+
 /**********************************************************************/
 /************************** JUMBOTRON ********************************/
 /********************************************************************/
@@ -449,6 +453,12 @@ footer .social a .fa-inverse {
 	.navbar-nav {
 		float: left;
 	}
+
+    .navbar-btn {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
 	.jumbotron {
 		padding-top: 60px;
 	}
@@ -484,6 +494,11 @@ footer .social a .fa-inverse {
 		font-size: 14px;
 		padding: 12px 15px;
 	}
+
+    .navbar-btn {
+        display: block;
+    }
+
 	.jumbotron {
 		padding-left: 0;
 		padding-right: 0;

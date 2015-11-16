@@ -1,4 +1,4 @@
-Django
+Django>=1.8,<1.9
 Pillow
 pytz
 psycopg2
@@ -11,3 +11,5 @@ django-debug-toolbar
 django-ckeditor
 django-model-utils
 django-environ
+django-bootstrap3
+django-recaptcha

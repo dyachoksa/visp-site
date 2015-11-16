@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load bootstrap3 i18n %}
+
+{% block page_title %}{% trans "Connect" %}{% endblock %}
+
+{% block page_content %}
+  <div id="featureWrap">
+    <div class="container">
+      {% bootstrap_messages %}
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>{% trans "Connect" %}</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <form action="" method="post" class="form">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+
+            {% buttons %}
+              <button type="submit" class="btn btn-primary">{% trans "Send" %}</button>
+            {% endbuttons %}
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <div class="well">
+            <p>
+              Для подключения заполните и отправте электронную заяку или посетите один из наших офисов.
+              <br>
+              С более подробной информацией о подключении Вы можете ознакомиться на странице
+              <a href="/pages/connect/">О Сети > Подключение</a>.
+            </p>
+          </div>
+
+          <div class="embed-responsive embed-responsive-4by3">
+            <div class="embed-responsive-item" id="map"></div>
+          </div>
+          <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=YhntnkUmZ7K8UkkFhd9Fmr55Pwa-M2Is&id=map"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

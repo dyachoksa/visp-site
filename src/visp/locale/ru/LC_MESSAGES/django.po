@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-24 21:43+0300\n"
-"PO-Revision-Date: 2015-07-24 21:47+0300\n"
+"POT-Creation-Date: 2015-10-24 22:51+0300\n"
+"PO-Revision-Date: 2015-10-24 22:54+0300\n"
 "Last-Translator: Sergey Dyachok <sergey@sdyachok.com.ua>\n"
 "Language-Team: RU <ru@li.org>\n"
 "Language: ru\n"
@@ -18,6 +18,46 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 1.5.4\n"
+
+#: customers/apps.py:14
+msgid "Customers"
+msgstr "Клиенты"
+
+#: customers/forms.py:28
+msgid "New request"
+msgstr "Новая заявка"
+
+#: customers/models.py:16
+msgid "request date"
+msgstr "дата заявки"
+
+#: customers/models.py:17
+msgid "name"
+msgstr "имя"
+
+#: customers/models.py:18
+msgid "address"
+msgstr "адрес"
+
+#: customers/models.py:19
+msgid "phone number"
+msgstr "номер телефона"
+
+#: customers/models.py:20
+msgid "comment"
+msgstr "комментарий"
+
+#: customers/models.py:24
+msgid "request"
+msgstr "заявка"
+
+#: customers/models.py:25
+msgid "requests"
+msgstr "заявки"
+
+#: customers/views/leave_request.py:25
+msgid "Your request has been successfully sent."
+msgstr "Ваша заявка была успешно отослана."
 
 #: news/admin.py:33
 msgid "has image"
@@ -95,13 +135,23 @@ msgstr "позиция"
 msgid "prices"
 msgstr "цены"
 
-#: visp/settings.py:165
+#: visp/settings.py:202
 msgid "Russian"
 msgstr "Русский"
 
-#: visp/settings.py:166
+#: visp/settings.py:203
 msgid "English"
 msgstr "Английский"
+
+#: visp/templates/customers/leave_request.html:4
+#: visp/templates/customers/leave_request.html:13
+#: visp/templates/pages/home.html:16 visp/templates/prices/price_list.html:38
+msgid "Connect"
+msgstr "Подключиться"
+
+#: visp/templates/customers/leave_request.html:24
+msgid "Send"
+msgstr "Отправить"
 
 #: visp/templates/news/news_detail.html:19
 msgid "All news"
@@ -115,10 +165,6 @@ msgstr "читать дальше"
 #: visp/templates/pages/home.html:4
 msgid "Main"
 msgstr "Главная"
-
-#: visp/templates/pages/home.html:16 visp/templates/prices/price_list.html:38
-msgid "Connect"
-msgstr "Подключиться"
 
 #: visp/templates/prices/price_list.html:23
 msgid "For private sector"

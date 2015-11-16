@@ -53,14 +53,18 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.flatpages',
 
-    'debug_toolbar',
-    'compressor',
-    'sitetree',
+    'bootstrap3',
     'ckeditor',
+    'ckeditor_uploader',
+    'compressor',
+    'debug_toolbar',
+    'sitetree',
+    'captcha',
 
     'pages',
     'news',
     'prices',
+    'customers',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -178,6 +182,22 @@ COMPRESS_JS_FILTERS = [
 ]
 
 
+# Mail settings
+REQUEST_RECIPIENTS = [
+    'admin@visp.com.ua',
+    'z.dotsenko@visp.com.ua',
+    'ekaplich@visp.com.ua',
+]
+
+EMAIL_HOST = env('EMAIL_HOST')
+
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+
+EMAIL_PORT = env('EMAIL_PORT')
+
+
 # Other settings
 
 from django.utils.translation import ugettext_lazy as _
@@ -206,3 +226,11 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.signals.SignalsPanel',
     'debug_toolbar.panels.logging.LoggingPanel',
 ]
+
+RECAPTCHA_PUBLIC_KEY = env('RECAPTCHA_PUBLIC_KEY')
+
+RECAPTCHA_PRIVATE_KEY = env('RECAPTCHA_PRIVATE_KEY')
+
+RECAPTCHA_USE_SSL = True
+
+NOCAPTCHA = True

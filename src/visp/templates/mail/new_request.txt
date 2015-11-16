@@ -1,0 +1,10 @@
+Новая заявка.
+
+Имя: {{ data.customer_name }}
+Телефон: {{ data.phone }}
+Адрес: {{ data.address }}
+
+{% if data.customer_comment %}
+Комментарий:
+{{ data.customer_comment }}
+{% endif %}

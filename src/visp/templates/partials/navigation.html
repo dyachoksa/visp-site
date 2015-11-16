@@ -17,7 +17,9 @@
       </a>
     </div>
 
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse clearfix">
+      <a href="{% url 'leave_request' %}" class="btn btn-success btn-lg navbar-btn navbar-right">{% trans 'Connect' %}</a>
+
       {% sitetree_menu from "main" include "trunk,topmenu" template "sitetree/menu_bootstrap3.html" %}
     </div><!--/.nav-collapse -->
   </div>
