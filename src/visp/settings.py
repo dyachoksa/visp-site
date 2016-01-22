@@ -166,9 +166,17 @@ CKEDITOR_CONFIGS = {
             ],
             ['Link', 'Unlink', 'Anchor', 'Image'],
             ['RemoveFormat', 'Source'],
-        ]
+        ],
+        'extraPlugins': ','.join([
+            'dialog',
+            'dialogui',
+        ])
     }
 }
+
+CKEDITOR_BROWSE_SHOW_DIRS = True
+
+CKEDITOR_ALLOW_NONIMAGE_FILES = True
 
 COMPRESS_ENABLED = True
 

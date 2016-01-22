@@ -5,12 +5,12 @@
 # License: MIT License
 #
 from __future__ import unicode_literals
-from ckeditor.widgets import CKEditorWidget
+from ckeditor_uploader.widgets import CKEditorUploadingWidget
 from django.contrib.flatpages.forms import FlatpageForm as BaseFlatPageForm
 
 
 class FlatPageForm(BaseFlatPageForm):
     class Meta:
         widgets = {
-            'content': CKEditorWidget()
+            'content': CKEditorUploadingWidget()
         }
