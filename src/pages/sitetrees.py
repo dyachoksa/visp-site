@@ -19,6 +19,7 @@ sitetrees = (
             item('Internet', '/pages/about/', url_as_pattern=False),
             item('Cable TV', '/pages/about/tv/', url_as_pattern=False),
             item('Connect', '/pages/connect/', url_as_pattern=False),
+            item('Balance recharge', '/pages/pay/', url_as_pattern=False),
         ]),
         item('Contacts', '/pages/contacts/', url_as_pattern=False),
         item('My Account', 'https://cp.visp.com.ua:9443/', url_as_pattern=False),
@@ -28,6 +29,7 @@ sitetrees = (
         item('Internet', '/pages/about/', url_as_pattern=False),
         item('Cable TV', '/pages/about/tv/', url_as_pattern=False),
         item('Connect', '/pages/connect/', url_as_pattern=False),
+        item('Balance recharge', '/pages/pay/', url_as_pattern=False),
     ]),
 
     tree('main_ru', items=[
@@ -40,6 +42,7 @@ sitetrees = (
             item('Интернет', '/pages/about/', url_as_pattern=False),
             item('Кабельное ТВ', '/pages/about/tv/', url_as_pattern=False),
             item('Подключение', '/pages/connect/', url_as_pattern=False),
+            item('Пополнение счета', '/pages/pay/', url_as_pattern=False),
         ]),
         item('Контакты', '/pages/contacts/', url_as_pattern=False),
         item('Личный кабинет', 'https://cp.visp.com.ua:9443/', url_as_pattern=False),
@@ -49,5 +52,6 @@ sitetrees = (
         item('Интернет', '/pages/about/', url_as_pattern=False),
         item('Кабельное ТВ', '/pages/about/tv/', url_as_pattern=False),
         item('Подключение', '/pages/connect/', url_as_pattern=False),
+        item('Пополнение счета', '/pages/pay/', url_as_pattern=False),
     ]),
 )

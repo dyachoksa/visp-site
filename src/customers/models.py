@@ -18,6 +18,7 @@ class Request(TimeStampedModel):
     address = models.CharField(_('address'), max_length=255)
     phone = models.CharField(_('phone number'), max_length=25)
     customer_comment = models.TextField(_('comment'), blank=True, default=None, null=True)
+    is_handled = models.BooleanField(_('is handled'), default=False)
 
     class Meta:
         ordering = ['-created']

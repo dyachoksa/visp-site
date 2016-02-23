@@ -12,7 +12,7 @@ from .models import Request
 
 
 class RequestsAdmin(admin.ModelAdmin):
-    list_display = ['request_date', 'customer_name', 'address', 'phone']
+    list_display = ['request_date', 'customer_name', 'address', 'phone', 'is_handled']
 
 
 admin.site.register(Request, RequestsAdmin)
