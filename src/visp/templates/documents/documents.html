@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_title %}{% trans "Public information and reports" %}{% endblock %}
+
+{% block page_content %}
+  <div id="featureWrap">
+    <div class="container">
+      <div class="col-sm-12">
+        <h1>{% trans "Public information and reports" %}</h1>
+
+        {% for document_group in document_groups %}
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>{{ document_group.title }}</h2>
+
+              <ul>
+                {% for document in document_group.document_set.all %}
+                  <li><a href="{{ document.file.url }}" target="_blank">{{ document.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

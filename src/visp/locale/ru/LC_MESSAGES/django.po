@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-24 22:51+0300\n"
-"PO-Revision-Date: 2015-10-24 22:54+0300\n"
+"POT-Creation-Date: 2016-03-29 22:21+0300\n"
+"PO-Revision-Date: 2016-03-29 22:23+0300\n"
 "Last-Translator: Sergey Dyachok <sergey@sdyachok.com.ua>\n"
 "Language-Team: RU <ru@li.org>\n"
 "Language: ru\n"
@@ -47,17 +47,57 @@ msgstr "номер телефона"
 msgid "comment"
 msgstr "комментарий"
 
-#: customers/models.py:24
+#: customers/models.py:21
+msgid "is handled"
+msgstr "выполнена"
+
+#: customers/models.py:25
 msgid "request"
 msgstr "заявка"
 
-#: customers/models.py:25
+#: customers/models.py:26
 msgid "requests"
 msgstr "заявки"
 
 #: customers/views/leave_request.py:25
 msgid "Your request has been successfully sent."
 msgstr "Ваша заявка была успешно отослана."
+
+#: documents/apps.py:15
+#| msgid "comment"
+msgid "Documents"
+msgstr "Документы"
+
+#: documents/models.py:16 documents/models.py:31 news/models.py:16
+#: prices/models.py:15
+msgid "title"
+msgstr "название"
+
+#: documents/models.py:17 documents/models.py:32 prices/models.py:21
+msgid "position"
+msgstr "позиция"
+
+#: documents/models.py:21 documents/models.py:30
+msgid "document group"
+msgstr "группа документов"
+
+#: documents/models.py:22
+msgid "document groups"
+msgstr "группы документов"
+
+#: documents/models.py:33
+msgid "file"
+msgstr "файл"
+
+#: documents/models.py:40
+#| msgid "comment"
+msgid "document"
+msgstr "документ"
+
+#: documents/models.py:41
+#| msgid "comment"
+msgid "documents"
+msgstr "документы"
 
 #: news/admin.py:33
 msgid "has image"
@@ -68,10 +108,6 @@ msgstr "есть изображение"
 #: visp/templates/news/templatetags/latest_news.html:3
 msgid "News"
 msgstr "Новости"
-
-#: news/models.py:16 prices/models.py:15
-msgid "title"
-msgstr "название"
 
 #: news/models.py:18 prices/models.py:19
 msgid "is published"
@@ -127,31 +163,35 @@ msgstr "описание"
 msgid "private sector tariff"
 msgstr "тариф частного сектора"
 
-#: prices/models.py:21
-msgid "position"
-msgstr "позиция"
-
 #: prices/models.py:33
 msgid "prices"
 msgstr "цены"
 
-#: visp/settings.py:202
+#: visp/settings.py:234
 msgid "Russian"
 msgstr "Русский"
 
-#: visp/settings.py:203
+#: visp/settings.py:235
 msgid "English"
 msgstr "Английский"
 
 #: visp/templates/customers/leave_request.html:4
 #: visp/templates/customers/leave_request.html:13
-#: visp/templates/pages/home.html:16 visp/templates/prices/price_list.html:38
+#: visp/templates/pages/home.html:16
+#: visp/templates/partials/navigation.html:21
+#: visp/templates/prices/price_list.html:38
 msgid "Connect"
 msgstr "Подключиться"
 
 #: visp/templates/customers/leave_request.html:24
 msgid "Send"
 msgstr "Отправить"
+
+#: visp/templates/documents/documents.html:4
+#: visp/templates/documents/documents.html:10
+#: visp/templates/partials/footer.html:9
+msgid "Public information and reports"
+msgstr "Публичная информация и отчетность"
 
 #: visp/templates/news/news_detail.html:19
 msgid "All news"

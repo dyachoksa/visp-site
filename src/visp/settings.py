@@ -65,6 +65,7 @@ INSTALLED_APPS = (
     'news',
     'prices',
     'customers',
+    'documents',
 )
 
 MIDDLEWARE_CLASSES = (
