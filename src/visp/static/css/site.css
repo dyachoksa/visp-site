@@ -595,6 +595,10 @@ footer .social a .fa-inverse {
         font-size: 22px;
     }
 
+    .jumbotron .action-btn .text {
+        margin-top: 0;
+    }
+
     #featureWrap .feature {
         margin-bottom: 40px;
     }
